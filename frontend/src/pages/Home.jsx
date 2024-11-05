@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { Button, IconButton, TextField } from '@mui/material';
 import RestoreIcon from '@mui/icons-material/Restore';
 // import { AuthContext } from '../contexts/AuthContext';
-import "../app.scss"
+import "../App.scss"
 import { AuthContext } from '../contexts/AuthContext';
 
 
