@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // color: #fff;
+  font-family: sans-serif;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.main-container {
+  background-image: url("/background.png");
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  nav {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // height: 4rem;
+    // background-color: red;
+    color: #fff;
+
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      li {
+        a {
+          text-decoration: none;
+          color: #fff;
+
+        }
+      }
+
+      button {
+        padding: 0.4rem 0.8rem;
+        border: none;
+        font-size: 1rem;
+        border-radius: 10px;
+        background-color: transparent;
+        color: #fff;
+
+      }
+
+      button:hover {
+        background-color: darkorange;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // background-color: red;
+    width: 100vw;
+    height: 91vh;
+    padding: 0 6%;
+
+    .left {
+      h1 {
+        font-size: 3rem;
+        color: #fff;
+
+        span {
+          color: darkorange;
+        }
+      }
+
+      p {
+        color: grey;
+        margin-top: 0.3rem;
+        font-size: 1.5rem;
+      }
+    }
+
+    .right {
+      img {
+        width: 100%;
+        height: 70vh;
+      }
+    }
+  }
+}
+
+.btn {
+  background-color: darkorange;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+
+  a {
+    color: #fff;
+  }
+}
+
+// home page 
+
+.navBar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  text-align: center;
+}
+
+.meetContainer {
+  display: flex;
+  padding-inline: 20px;
+  height: 80vh;
+  gap: 10vw;
+  justify-content: center;
+  .leftPanel {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .rightPanel {
+    display: flex;
+    align-items: center;
+    img {
+      width: 30vw;
+      height: auto;
+      border-radius: 20px;
+    }
+  }
+  
+}

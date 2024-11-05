@@ -1,0 +1,50 @@
+.meetUserContainer{
+    background-color:darkblue;
+    height: 100vh;
+    position: relative;
+    .meetUserVideo{
+        position: absolute;
+        height: 30vh;
+        left: 2vh;
+        bottom: 10vh;
+        border-radius: 20px;
+        background-color: pink;
+    }
+    .conferenceView{
+        display: flex;
+        gap: 10px;
+        padding-inline: 10px ;
+        video{
+            width: 20vw;
+            border-radius: 10px;
+        }
+    }
+    .buttonContainer{
+        position: absolute;
+        bottom: 3vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        svg{
+        color: #fff;
+        font-size: 2rem;
+        }
+    }
+    .chatRoom{
+        background-color: #fff;
+        position: absolute;
+        right: 0;
+        height: 90vh;
+        width: 22vw;
+        border-radius: 10px;
+        padding-inline: 20px;
+        .chatContainer{
+            position: relative;
+            height: 100%;
+            .chattingAre{
+                position: absolute;
+                bottom: 1vh;
+            }
+        }
+    }
+}
