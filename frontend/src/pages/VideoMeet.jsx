@@ -1,9 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
-import "../styles/videoMeet.scss"
+import "../styles/videoMeet.css"
 import TextField from '@mui/material/TextField';
 import { Button, IconButton } from '@mui/material';
 import io from "socket.io-client"
-import "../styles/videoMeet.scss"
 import VideocamIcon from '@mui/icons-material/Videocam';
 import VideocamOffIcon from '@mui/icons-material/VideocamOff';
 import MicIcon from '@mui/icons-material/Mic';
