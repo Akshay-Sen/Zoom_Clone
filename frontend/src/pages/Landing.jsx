@@ -1,5 +1,5 @@
 import React from 'react'
-import "../app.scss"
+import "../App.scss"
 import { Link } from "react-router-dom"
 
 export default function Landing() {
