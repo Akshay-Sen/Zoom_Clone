@@ -13,8 +13,9 @@ import ScreenShareIcon from '@mui/icons-material/ScreenShare';
 import StopScreenShareIcon from '@mui/icons-material/StopScreenShare';
 import ChatIcon from '@mui/icons-material/Chat';
 import { Badge } from "@mui/material"
+import server from '../envirolment';
 
-const server_url = "http://localhost:3000"
+const server_url = server;
 
 let connections = {};
 
