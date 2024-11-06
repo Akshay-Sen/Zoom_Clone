@@ -1,13 +1,14 @@
 .meetUserContainer {
     background-color: darkblue;
+    width: 100vw;
     height: 100vh;
     position: relative;
 }
 
 .meetUserVideo {
     position: absolute;
-    height: 30vh;
-    left: 2vh;
+    width: 20%;
+    left: 1%;
     bottom: 10vh;
     border-radius: 20px;
     background-color: pink;
@@ -16,7 +17,7 @@
 .conferenceView {
     display: flex;
     gap: 10px;
-    padding-inline: 10px;
+    padding: 10px;
 }
 
 .conferenceView video {
@@ -42,7 +43,7 @@
     position: absolute;
     right: 0;
     height: 90vh;
-    width: 22vw;
+    width: 20%;
     border-radius: 10px;
     padding-inline: 20px;
 }
@@ -50,9 +51,104 @@
 .chatContainer{
     position: relative;
     height: 100%;
+    padding-top: 5% ;
+}
+
+.chatContainer h1{
+    margin-bottom: 1rem;
 }
 
 .chattingAre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    bottom: 1vh;
+    gap: 10px;
+    bottom: 3vh;
+}
+
+@media (max-width: 768px)  { 
+    .meetUserVideo {
+        width: 60%;
+        left: 2%;
+    }
+
+    .conferenceView {
+        display: flex;
+    }
+
+    .conferenceView video {
+        width: 40%;
+        border-radius: 10px;
+    }
+
+    .chatRoom{
+        right: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: all 0.3s ease-in;
+    }
+}
+
+/* loby  */
+ 
+.loby{
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.loby h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.loby button {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+video{
+    width: 30rem;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+@media (max-width: 768px)  {
+    .loby{
+        width: 100vw;
+        flex-wrap: wrap;
+        padding: 0 5px;
+    }
+
+    .loby h1{
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    
+    }
+
+    .loby button {
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+        /* display: block; */
+    }
+
+    .loby_video{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: red; */
+
+    }
+
+    video{
+        width: 100%;
+    }
 }

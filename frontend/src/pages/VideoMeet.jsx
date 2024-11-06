@@ -36,11 +36,11 @@ export default function VideoMeet() {
   let [video, setVideo] = useState([]);
   let [audio, setAudio] = useState();
   let [screenShare, setScreenShare] = useState();
-  let [showModal, setShowModal] = useState(true);
+  let [showModal, setShowModal] = useState(false);
   let [screenAvalaible, setScreenAvailable] = useState();
   let [messages, setMessages] = useState([]);
   let [message, setMessage] = useState("");
-  let [newMessages, setNewMessages] = useState(5);
+  let [newMessages, setNewMessages] = useState(0);
 
   let [askForUsername, setAskForUsername] = useState(true);
   let [username, setUsername] = useState("");
@@ -425,17 +425,20 @@ export default function VideoMeet() {
   return (
     <div>
       {askForUsername === true ?
-        <div>
-          <h2>Enter Into Lobby {username} </h2>
-          <TextField
+        <div className='loby'>
+          <div>
+          <h1>Enter Into Lobby  </h1>
+          <TextField className='input'
             id="outlined-basic"
             label="Username"
             variant="outlined"
             onChange={(e) => setUsername(e.target.value)}
           />
           <Button onClick={connect} variant="contained">Connect</Button>
+          </div>
+          
 
-          <div>
+          <div className='loby_video'>
             <video ref={localVideoRef} autoPlay muted></video>
           </div>
 
@@ -494,8 +497,8 @@ export default function VideoMeet() {
 
           <div className='conferenceView'>
             {videos.map((video) => (
-              <div key={video.socketId}>
-                <video
+              // <div key={video.socketId}>
+                <video key={video.socketId}
                   data-socket={video.socketId}
                   ref={ref => {
                     if (ref && video.stream) {
@@ -505,7 +508,7 @@ export default function VideoMeet() {
                   autoPlay
                 >
                 </video>
-              </div>
+              // </div>
             ))}
           </div>
 

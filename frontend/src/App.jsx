@@ -18,7 +18,7 @@ function App() {
         <Route path='/' element={<Landing />} />
         <Route path='/auth' element={<Authentication />} />
         <Route path='/home' element={<Home />} />
-        <Route path='/history' element={<History />} />
+        {/* <Route path='/history' element={<History />} /> */}
         <Route path='/:url' element={<VideoMeet />} />
       </Routes>
 

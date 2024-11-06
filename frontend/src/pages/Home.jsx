@@ -29,20 +29,22 @@ function Home() {
           <h2>Apna Video Call</h2>
         </div>
 
-        <div style={{ display: "flex", alignItems: "center" }}>
-          <IconButton onClick={
+        <div>
+          {/* <IconButton onClick={
             () => {
               navigate("/history")
             }
           }>
             <RestoreIcon />
           </IconButton>
-          <p>History</p>
+          <p>History</p> */}
 
           <Button onClick={() => {
             localStorage.removeItem("token")
             navigate("/auth")
-          }}>
+          }}
+          style={{fontWeight:"600", color:"black"}}
+          >
             Logout
           </Button>
         </div>
