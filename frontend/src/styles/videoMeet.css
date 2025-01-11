@@ -71,6 +71,11 @@
     .meetUserVideo {
         width: 60%;
         left: 2%;
+        margin-bottom: 5%;
+    }
+
+    .buttonContainer{
+        margin-bottom: 5%;
     }
 
     .conferenceView {
