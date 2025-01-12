@@ -108,6 +108,10 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    background-image: url("bg8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* color: #fff !important; */
 }
 
 .loby h1 {
@@ -119,12 +123,13 @@
 .loby button {
     margin-left: 1rem;
     margin-top: 0.5rem;
+    background-color: green !important;
 }
 
 video {
     width: 30rem;
     border-radius: 10px;
-    border: 2px solid black;
+    border: 2px solid green;
 }
 
 @media (max-width: 768px) {
