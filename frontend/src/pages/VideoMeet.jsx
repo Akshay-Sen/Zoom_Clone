@@ -426,8 +426,8 @@ export default function VideoMeet() {
     <div>
       {askForUsername === true ?
         <div className='loby'>
-            <h1>Enter Into Lobby  </h1>
-          <div className='containt'>
+          <div>
+          <h1>Enter Into Lobby  </h1>
             <TextField className='input'
               id="outlined-basic"
               label="Username"

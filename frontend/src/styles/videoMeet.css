@@ -131,19 +131,17 @@ video {
     .loby {
         width: 100vw;
         flex-wrap: wrap;
-        padding: 5px;
-    }
-
-    .containt{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        padding: 0 5px;
     }
 
     .loby h1 {
         font-size: 2rem;
         text-align: center;
         margin-bottom: 1rem;
+    }
+
+    .input {
+        width: 60% !important;
     }
 
     .loby button {
@@ -157,7 +155,6 @@ video {
         justify-content: center;
         align-items: center;
         /* background-color: red; */
-
     }
 
     video {
