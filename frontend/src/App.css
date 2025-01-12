@@ -229,12 +229,12 @@ nav ul button:hover {
   } */
 
   .leftPanel h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .meetContainer .rightPanel img {
     width: 70vh;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
   }
 
 }
