@@ -221,28 +221,20 @@ nav ul button:hover {
   .meetContainer {
     flex-wrap: wrap;
     height: 100vh;
-    width: 100vw;
     gap: 0;
-    padding: 0;
   }
 
-  .leftPanel{
-    /* margin-top: 3rem; */
-    padding-inline: 20px;
-  }
+  /* .leftPanel{
+    margin-top: 3rem;
+  } */
 
   .leftPanel h2 {
-    font-size: 1.8rem;
-    /* line-height: 2.3rem; */
-  }
-
-  .rightPanel{
-    padding-inline: 0;
-    width: 100vw;
+    font-size: 1.5rem;
   }
 
   .meetContainer .rightPanel img {
-    width: 100%;
+    width: 70vh;
+    margin-bottom: 2rem;
   }
 
 }
