@@ -412,10 +412,10 @@ export default function VideoMeet() {
     setMessage("")
   }
 
-  let handleEndCall = () =>{
+  let handleEndCall = () => {
     try {
       let tracks = localVideoRef.current.srcObject.getTracks();
-      tracks.forEach((track)=>track.stop())
+      tracks.forEach((track) => track.stop())
     } catch (err) {
       console.log(err)
     }
@@ -426,17 +426,16 @@ export default function VideoMeet() {
     <div>
       {askForUsername === true ?
         <div className='loby'>
-          <div>
-          <h1>Enter Into Lobby  </h1>
-          <TextField className='input'
-            id="outlined-basic"
-            label="Username"
-            variant="outlined"
-            onChange={(e) => setUsername(e.target.value)}
-          />
-          <Button onClick={connect} variant="contained">Connect</Button>
+            <h1>Enter Into Lobby  </h1>
+          <div className='containt'>
+            <TextField className='input'
+              id="outlined-basic"
+              label="Username"
+              variant="outlined"
+              onChange={(e) => setUsername(e.target.value)}
+            />
+            <Button onClick={connect} variant="contained">Connect</Button>
           </div>
-          
 
           <div className='loby_video'>
             <video ref={localVideoRef} autoPlay muted></video>
@@ -453,8 +452,8 @@ export default function VideoMeet() {
                 <div className="chattingDisplay">
                   {messages.map((item, index) => {
                     return (
-                      <div style={{marginBottom:"20px"}} key={index}>
-                        <p style={{fontWeight:"bold"}}>{item.sender}</p>
+                      <div style={{ marginBottom: "20px" }} key={index}>
+                        <p style={{ fontWeight: "bold" }}>{item.sender}</p>
                         <p>{item.data}</p>
                       </div>
                     )
@@ -498,16 +497,16 @@ export default function VideoMeet() {
           <div className='conferenceView'>
             {videos.map((video) => (
               // <div key={video.socketId}>
-                <video key={video.socketId}
-                  data-socket={video.socketId}
-                  ref={ref => {
-                    if (ref && video.stream) {
-                      ref.srcObject = video.stream
-                    }
-                  }}
-                  autoPlay
-                >
-                </video>
+              <video key={video.socketId}
+                data-socket={video.socketId}
+                ref={ref => {
+                  if (ref && video.stream) {
+                    ref.srcObject = video.stream
+                  }
+                }}
+                autoPlay
+              >
+              </video>
               // </div>
             ))}
           </div>
