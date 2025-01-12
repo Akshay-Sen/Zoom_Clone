@@ -419,7 +419,7 @@ export default function VideoMeet() {
     } catch (err) {
       console.log(err)
     }
-    window.location.href = "/home"
+    window.location.href = "/"
   }
 
   return (

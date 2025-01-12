@@ -14,7 +14,7 @@ a {
 .main-container {
   background-image: url("/background.png");
   width: 100vw;
-  height: 100vh ;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -203,7 +203,7 @@ nav ul button:hover {
 .leftPanel h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .meetContainer .rightPanel {
@@ -220,20 +220,29 @@ nav ul button:hover {
 @media (max-width: 768px) {
   .meetContainer {
     flex-wrap: wrap;
-    height: 90vh;
+    height: 100vh;
+    width: 100vw;
     gap: 0;
+    padding: 0;
   }
 
   .leftPanel{
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
+    padding-inline: 20px;
   }
 
   .leftPanel h2 {
     font-size: 1.8rem;
-    margin-bottom: 1rem;
+    /* line-height: 2.3rem; */
+  }
+
+  .rightPanel{
+    padding-inline: 0;
+    width: 100vw;
   }
 
   .meetContainer .rightPanel img {
-    width: 70vh;
+    width: 100%;
   }
+
 }

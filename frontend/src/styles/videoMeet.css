@@ -38,27 +38,27 @@
     font-size: 2rem;
 }
 
-.chatRoom{
+.chatRoom {
     background-color: #fff;
     position: absolute;
     right: 0;
-    height: 85vh;
+    height: 90vh;
     width: 20%;
     border-radius: 10px;
     padding-inline: 20px;
 }
 
-.chatContainer{
+.chatContainer {
     position: relative;
     height: 100%;
-    padding-top: 5% ;
+    padding-top: 5%;
 }
 
-.chatContainer h1{
+.chatContainer h1 {
     margin-bottom: 1rem;
 }
 
-.chattingAre{
+.chattingAre {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,14 +67,14 @@
     bottom: 3vh;
 }
 
-@media (max-width: 768px)  { 
+@media (max-width: 768px) {
     .meetUserVideo {
         width: 60%;
         left: 2%;
         margin-bottom: 12%;
     }
 
-    .buttonContainer{
+    .buttonContainer {
         margin-bottom: 12%;
     }
 
@@ -87,17 +87,19 @@
         border-radius: 10px;
     }
 
-    .chatRoom{
+    .chatRoom {
         right: 0;
         width: 100%;
         z-index: 1000;
         transition: all 0.3s ease-in;
+        height: 85vh;
+
     }
 }
 
 /* loby  */
- 
-.loby{
+
+.loby {
     width: 100vw;
     height: 100vh;
     margin: auto;
@@ -108,7 +110,7 @@
     gap: 20px;
 }
 
-.loby h1{
+.loby h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
@@ -119,24 +121,24 @@
     margin-top: 0.5rem;
 }
 
-video{
+video {
     width: 30rem;
     border-radius: 10px;
     border: 2px solid black;
 }
 
-@media (max-width: 768px)  {
-    .loby{
+@media (max-width: 768px) {
+    .loby {
         width: 100vw;
         flex-wrap: wrap;
         padding: 0 5px;
     }
 
-    .loby h1{
+    .loby h1 {
         font-size: 2rem;
         text-align: center;
         margin-bottom: 1rem;
-    
+
     }
 
     .loby button {
@@ -145,7 +147,7 @@ video{
         /* display: block; */
     }
 
-    .loby_video{
+    .loby_video {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -153,7 +155,7 @@ video{
 
     }
 
-    video{
+    video {
         width: 100%;
     }
 }
